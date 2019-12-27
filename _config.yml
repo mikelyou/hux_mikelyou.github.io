@@ -2,21 +2,21 @@
 title: title
 SEOTitle: 你的博客 | seotitle
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: liuch8120@gmail.com
 description: ""
 keyword: ""
 url: "https://mikelyou.com"              # your host, for absolute URL
-baseurl: "/huxblog-boilerplate"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/tags"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
+#weibo_username:     huxpro
+#zhihu_username:     huxpro
+github_username:    mikelyou
 #twitter_username:  huxpro
-facebook_username:  huxpro
+#facebook_username:  huxpro
 
 
 
