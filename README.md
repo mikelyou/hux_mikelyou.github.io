@@ -1,4 +1,4 @@
-# HuxBlog Boilerplate
+# Mike Lyou Blog
 
 ## About the boilerplate
 
@@ -20,6 +20,7 @@ If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Hux
 - **[jekyll官方文档](http://jekyllcn.com/docs/structure/)** 中有很多好玩的选项，比如
   - [摘要](http://jekyllcn.com/docs/posts/#%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81)
   - [草稿](http://jekyllcn.com/docs/drafts/)
+- 双重滚动条又出现了
 
 
 ## Past Works
