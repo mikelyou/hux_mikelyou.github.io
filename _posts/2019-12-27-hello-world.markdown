@@ -38,7 +38,7 @@ tags:
 
 - **DNS** 是将域名和IP连接起来的东西。好比地图册，可以告诉我们“张三烧烤”的具体地址是“第五大道269号”。
 
-- 想了解更详细的内容请自行百度，或者这里我随便找了一篇[文章](https://www.jianshu.com/p/6323a4f0ada4)。
+- 想了解更详细的内容请自行百度，或者这里我随便找了一篇文章：[域名、DNS、IP地址的对应关系](https://www.jianshu.com/p/6323a4f0ada4)。
 
 
 ###### 什么是ruby、gem 和 jekyll
@@ -48,6 +48,8 @@ tags:
 - `ruby gem`是用`ruby`语言写的一个“程序”，简称**`gem`**（`ruby 1.9.2`及其以上是已经默认安装了`ruby gem`的）。
 
 - **`jekyll`**是基于`ruby`的博客生成“软件”，需要在安装`ruby`后通过`gem`命令安装。
+
+目前常见的博客搭建有两种：一种是 GitHub+jekyll，另一种是GitHub+Hexo。本博客使用前一种 GitHub+jekyll 方法，也只讨论这种方法。
 
 （下面这段是我自己的想法，不一定正确）
 
@@ -80,13 +82,15 @@ tags:
 
 我建议在开始所有操作之前，打开一个记事本或笔记软件，把所有用到的网址、内容、参考文章统统记下来，害怕泄露隐私就写在纸上，以防忘记。无论是什么东西，忘记了都很麻烦。
 
+博客的搭建主要参考了 **[简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)** 以及 **[jekyll安装](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)** 两篇教程， 使用了 **[Hux的博客模板](https://github.com/Huxpro/huxblog-boilerplate)**。
+
 接下来是搭建博客的详细步骤：
 
 ###### 1. 购买域名：
 我在域名商  ~~去他爹~~  [GoDaddy](https://www.godaddy.com)  购买的。购买过程很简单，难点在于想好你的域名叫什么；购买保护隐私的钱和域名价格差不多了，我看到的教程都不建议购买。参考cnfeat的教程。
 
 ###### 2. 注册DNS服务：
-广受好评的有国内服务商[DNSpod](http://www.dnspod.cn)和国外服务商[HE](https://ipv6.he.net)。DNSpod 的使用参考cnfeat的教程，HE 的使用参考[这篇教程](https://www.ancii.com/aqz5yz5ad/)。这一步先注册，具体设置看后面。
+广受好评的有国内服务商[DNSpod](http://www.dnspod.cn)和国外服务商[HE](https://ipv6.he.net)。DNSpod 的使用参考cnfeat的教程，HE 的使用参考这篇教程[HE的使用教程](https://www.ancii.com/aqz5yz5ad/)。这一步先注册，具体设置看后面。
 
 ###### 3. 安装`Node.js`和`Git`：
 参考cnfeat的教程。
@@ -95,13 +99,13 @@ tags:
 前往[GitHub官网](https://github.com)。取个好名字，不要杀马特或中二病突发，将来仓库的名字必须是`你的用户名.github.io`。
 
 ###### 5. 配置`SSH Keys`：
-参考cnfeat的教程。其教程中的代码都是在`cmd`中输入的，前面的`$ `不是我们需要输入的内容。实在不懂可以先看看[cmd应用基础 扫盲教程](https://lellansin.wordpress.com/2012/12/15/cmd%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80-%E6%89%AB%E7%9B%B2%E6%95%99%E7%A8%8B/)。
+参考cnfeat的教程。其教程中的代码都是在`cmd`中输入的，前面的`$ `不是我们需要输入的内容。实在不懂可以先看看[cmd应用基础扫盲教程](https://lellansin.wordpress.com/2012/12/15/cmd%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80-%E6%89%AB%E7%9B%B2%E6%95%99%E7%A8%8B/)。
 
 ###### 6. 将独立域名与 GitHub Pages 的空间绑定
 
-- DNS设置：前往DNS服务商填写配置，配置方法分别参考cnfeat的教程和HE的使用教程。（HE似乎不能添加`·`记录，就改填`@`记录吧。`A`记录是GitHub Pages的IP, `NS`记录是DNS服务商自己提供的网址，`CHNAME`记录是形如`username.github.io`的你的博客仓库, `TTL`都设置成`86400`就没问题。没反应就清理一下缓存。）
+- DNS 设置：前往DNS服务商填写配置，配置方法分别参考 cnfeat的教程 和 HE的使用教程。（HE似乎不能添加`·`记录，就改填`@`记录吧。`A`记录是GitHub Pages的IP, `NS`记录是DNS服务商自己提供的网址，`CHNAME`记录是形如`username.github.io`的你的博客仓库, `TTL`都设置成`86400`就没问题。没反应就清理一下缓存。）
 
-- 在GoDaddy修改DNS地址：找到名为Nameservers(NS)的设置，将其原有内容删除，修改为DNS服务商提供的地址。设置方法分别参考cnfeat的教程和HE的使用教程。
+- 在 GoDaddy 修改 DNS 地址：找到名为 Nameservers(NS) 的设置，将其原有内容删除，修改为 DNS 服务商提供的地址。设置方法分别参考 cnfeat的教程 和 HE的使用教程。
 
 - 在GitHub仓库填写`CHANME.md`文件，或在设置中填写个性化域名，即你购买的形如`whatever.com`的域名。
 
@@ -136,10 +140,10 @@ tags:
 具体步骤如下：
 
 ###### 1. 将仓库clown至本地
-使用[GitHub Desktop](https://desktop.github.com)将仓库（也就是博客模板）clown至本地。参考cnfeat的教程。
+使用 [GitHub Desktop](https://desktop.github.com) 将仓库（也就是博客模板）clown至本地。参考cnfeat的教程。
 
 ###### 2. 使用`jekyll`搭建本地服务器
-这一步可参考[jekyll搭建](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)中“安装jekyll”那一节。
+这一步可参考 [jekyll搭建](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/) 中“安装jekyll”那一节。
 
 我的仓库位置在`E:\GitHub\mikelyou.github.io`，需要以管理员模式打开`cmd`并输入一下几行命令：
 ```
@@ -172,6 +176,11 @@ December 27, 2019
 
 Columbia University
 
+## 博客功能完善
+
+今天主要搞定一下评论功能、数据统计
+
+
 ## 致谢
 
 本人不才，能在短短一周内搭建出一个高端大气上档次的个人博客，靠的当然有个人的努力，但也绝对离不开各位陌生大佬们的帮助，在这里向大佬们表示感谢了。建立此博客以及撰写此文所用到的参考资料都在下面列出，本人学识和精力有限，如有错误，欢迎斧正。
@@ -190,4 +199,9 @@ Columbia University
 	- **jekyll安装（主要参考教程）：[jekyll安装及遇到的问题](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)**
 	- jekyll博客搭建：[jekyll博客搭建之艰辛之路(基本概念和处理报错)](https://dailc.github.io/2016/10/29/jekyllbuild.html)
 
-- 基础的cmd用法：[cmd应用基础 扫盲教程](https://lellansin.wordpress.com/2012/12/15/cmd%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80-%E6%89%AB%E7%9B%B2%E6%95%99%E7%A8%8B/) 和 [CMD命令进入某个目录](https://blog.csdn.net/aidenliu/article/details/5390113)
+- 其他参考
+	- [GitHub Markdown语法](https://help.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax#ignoring-markdown-formatting)
+
+	- [cmd应用基础扫盲教程](https://lellansin.wordpress.com/2012/12/15/cmd%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80-%E6%89%AB%E7%9B%B2%E6%95%99%E7%A8%8B/) 和 [CMD命令进入某个目录](https://blog.csdn.net/aidenliu/article/details/5390113)
+
+	- [域名、DNS、IP地址的对应关系](https://www.jianshu.com/p/6323a4f0ada4)

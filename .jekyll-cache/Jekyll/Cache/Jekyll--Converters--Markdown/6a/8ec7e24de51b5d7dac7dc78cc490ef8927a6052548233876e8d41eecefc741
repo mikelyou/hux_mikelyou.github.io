@@ -1,14 +1,14 @@
-I"�A<p>#&gt; “ ”</p>
-
-<p>#搭个博客，要了老命。</p>
+I"�C<blockquote>
+  <p>不要停笔，生活还在继续。</p>
+</blockquote>
 
 <h2 id="前言">前言</h2>
 
-<p>第一次有搭建博客的想法，是在看到同学 @张兴宇的博客时产生的。而恰巧最近学习知识的欲望高涨，希望能通过写总结来促进和巩固对知识的学习，我发现写博客是个很好的想法。</p>
+<p>刚刚开始研究生生活的我，学习知识的欲望又重新被点燃，希望能通过写总结来促进和巩固对知识的学习。就在这时，我发现写博客这个方法，再合适不过了。</p>
 
-<p>于是在 finals 结束后，我开始寻找教程，开始搭建自己的博客。博客的第一个版本，我使用的是 <a href="https://github.com/cnfeat">@cnfeat</a> 的<a href="https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/">教程</a>和模板。个人认为教程写的很好，按照教程我一步步搭好了博客。不过还没有写一篇文章，我就想换模板了，原因是觉得有点太简洁了。</p>
+<p>于是在 finals 结束后，我开始寻找教程，开始搭建自己的博客。博客的第一个版本，我使用的是 <a href="https://github.com/cnfeat">@cnfeat</a> 的<a href="https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/">教程</a>和模板。个人认为教程写的很好，按照教程我一步步搭好了博客。不过还没有写一篇文章，我就想换模板了，原因是觉得有点太简洁了，尤其是标签界面很丑。</p>
 
-<p>于是我发现了 <a href="https://github.com/Huxpro">@Hux</a> 的 <a href="https://github.com/Huxpro/huxblog-boilerplate">模板</a>。本以为简单换个模板就完事了，谁知出现了很多问题，导致原本三天可以搞定的事一星期才解决（当然中间摸鱼了好几天）。具体遇到的问题会在详细步骤中提到。</p>
+<p>于是我找到了 <a href="https://github.com/Huxpro">@Hux</a> 的 <a href="https://github.com/Huxpro/huxblog-boilerplate">模板</a>。本以为简单换个模板就完事了，谁知出现了很多问题，导致原本三天可以搞定的事一星期才解决（当然中间摸鱼了好几天）。具体遇到的问题会在详细步骤中提到。</p>
 
 <p>历经千辛万苦，在一个平静的下午，终于把<a href="https://mikelyou.cpm">我的个人博客</a>搭建成功了。</p>
 
@@ -34,7 +34,7 @@
     <p><strong>DNS</strong> 是将域名和IP连接起来的东西。好比地图册，可以告诉我们“张三烧烤”的具体地址是“第五大道269号”。</p>
   </li>
   <li>
-    <p>想了解更详细的内容请自行百度，或者这里我随便找了一篇<a href="https://www.jianshu.com/p/6323a4f0ada4">文章</a>。</p>
+    <p>想了解更详细的内容请自行百度，或者这里我随便找了一篇文章：<a href="https://www.jianshu.com/p/6323a4f0ada4">域名、DNS、IP地址的对应关系</a>。</p>
   </li>
 </ul>
 
@@ -82,7 +82,7 @@
 
 <p>如果你已经做好了时间和心理的准备，就开始搭建你自己的第一个博客吧。冲鸭~</p>
 
-<h2 id="搭建全过程">搭建全过程</h2>
+<h2 id="搭建博客全过程">搭建博客全过程</h2>
 
 <p>我建议在开始所有操作之前，打开一个记事本或笔记软件，把所有用到的网址、内容、参考文章统统记下来，害怕泄露隐私就写在纸上，以防忘记。无论是什么东西，忘记了都很麻烦。</p>
 
@@ -92,7 +92,7 @@
 <p>我在域名商  <del>去他爹</del>  <a href="https://www.godaddy.com">GoDaddy</a>  购买的。购买过程很简单，难点在于想好你的域名叫什么；购买保护隐私的钱和域名价格差不多了，我看到的教程都不建议购买。参考cnfeat的教程。</p>
 
 <h6 id="2-注册dns服务">2. 注册DNS服务：</h6>
-<p>广受好评的有国内服务商<a href="http://www.dnspod.cn">DNSpod</a>和国外服务商<a href="https://ipv6.he.net">HE</a>。DNSpod 的使用参考cnfeat的教程，HE 的使用参考<a href="https://www.ancii.com/aqz5yz5ad/">这篇教程</a>。这一步先注册，具体设置看后面。</p>
+<p>广受好评的有国内服务商<a href="http://www.dnspod.cn">DNSpod</a>和国外服务商<a href="https://ipv6.he.net">HE</a>。DNSpod 的使用参考cnfeat的教程，HE 的使用参考这篇教程<a href="https://www.ancii.com/aqz5yz5ad/">HE的使用教程</a>。这一步先注册，具体设置看后面。</p>
 
 <h6 id="3-安装nodejs和git">3. 安装<code class="highlighter-rouge">Node.js</code>和<code class="highlighter-rouge">Git</code>：</h6>
 <p>参考cnfeat的教程。</p>
@@ -101,16 +101,16 @@
 <p>前往<a href="https://github.com">GitHub官网</a>。取个好名字，不要杀马特或中二病突发，将来仓库的名字必须是<code class="highlighter-rouge">你的用户名.github.io</code>。</p>
 
 <h6 id="5-配置ssh-keys">5. 配置<code class="highlighter-rouge">SSH Keys</code>：</h6>
-<p>参考cnfeat的教程。其教程中的代码都是在<code class="highlighter-rouge">cmd</code>中输入的，前面的<code class="highlighter-rouge">$ </code>不是我们需要输入的内容。实在不懂可以先看看<a href="https://lellansin.wordpress.com/2012/12/15/cmd%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80-%E6%89%AB%E7%9B%B2%E6%95%99%E7%A8%8B/">cmd应用基础 扫盲教程</a>。</p>
+<p>参考cnfeat的教程。其教程中的代码都是在<code class="highlighter-rouge">cmd</code>中输入的，前面的<code class="highlighter-rouge">$ </code>不是我们需要输入的内容。实在不懂可以先看看<a href="https://lellansin.wordpress.com/2012/12/15/cmd%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80-%E6%89%AB%E7%9B%B2%E6%95%99%E7%A8%8B/">cmd应用基础扫盲教程</a>。</p>
 
 <h6 id="6-将独立域名与-github-pages-的空间绑定">6. 将独立域名与 GitHub Pages 的空间绑定</h6>
 
 <ul>
   <li>
-    <p>DNS设置：前往DNS服务商填写配置，配置方法分别参考cnfeat的教程和HE的使用教程。（HE似乎不能添加<code class="highlighter-rouge">·</code>记录，就改填<code class="highlighter-rouge">@</code>记录吧。<code class="highlighter-rouge">A</code>记录是GitHub Pages的IP, <code class="highlighter-rouge">NS</code>记录是DNS服务商自己提供的网址，<code class="highlighter-rouge">CHNAME</code>记录是形如<code class="highlighter-rouge">username.github.io</code>的你的博客仓库, <code class="highlighter-rouge">TTL</code>都设置成<code class="highlighter-rouge">86400</code>就没问题。没反应就清理一下缓存。）</p>
+    <p>DNS 设置：前往DNS服务商填写配置，配置方法分别参考 cnfeat的教程 和 HE的使用教程。（HE似乎不能添加<code class="highlighter-rouge">·</code>记录，就改填<code class="highlighter-rouge">@</code>记录吧。<code class="highlighter-rouge">A</code>记录是GitHub Pages的IP, <code class="highlighter-rouge">NS</code>记录是DNS服务商自己提供的网址，<code class="highlighter-rouge">CHNAME</code>记录是形如<code class="highlighter-rouge">username.github.io</code>的你的博客仓库, <code class="highlighter-rouge">TTL</code>都设置成<code class="highlighter-rouge">86400</code>就没问题。没反应就清理一下缓存。）</p>
   </li>
   <li>
-    <p>在GoDaddy修改DNS地址：找到名为Nameservers(NS)的设置，将其原有内容删除，修改为DNS服务商提供的地址。设置方法分别参考cnfeat的教程和HE的使用教程。</p>
+    <p>在 GoDaddy 修改 DNS 地址：找到名为 Nameservers(NS) 的设置，将其原有内容删除，修改为 DNS 服务商提供的地址。设置方法分别参考 cnfeat的教程 和 HE的使用教程。</p>
   </li>
   <li>
     <p>在GitHub仓库填写<code class="highlighter-rouge">CHANME.md</code>文件，或在设置中填写个性化域名，即你购买的形如<code class="highlighter-rouge">whatever.com</code>的域名。</p>
@@ -150,10 +150,10 @@
 <p>具体步骤如下：</p>
 
 <h6 id="1-将仓库clown至本地">1. 将仓库clown至本地</h6>
-<p>使用<a href="https://desktop.github.com">GitHub Desktop</a>将仓库（也就是博客模板）clown至本地。参考cnfeat的教程。</p>
+<p>使用 <a href="https://desktop.github.com">GitHub Desktop</a> 将仓库（也就是博客模板）clown至本地。参考cnfeat的教程。</p>
 
 <h6 id="2-使用jekyll搭建本地服务器">2. 使用<code class="highlighter-rouge">jekyll</code>搭建本地服务器</h6>
-<p>这一步可参考<a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll搭建</a>中“安装jekyll”那一节。</p>
+<p>这一步可参考 <a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll搭建</a> 中“安装jekyll”那一节。</p>
 
 <p>我的仓库位置在<code class="highlighter-rouge">E:\GitHub\mikelyou.github.io</code>，需要以管理员模式打开<code class="highlighter-rouge">cmd</code>并输入一下几行命令：</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>E:					#进入E盘
@@ -210,6 +210,18 @@ Ctrl+C					#关服
       <li>jekyll博客搭建：<a href="https://dailc.github.io/2016/10/29/jekyllbuild.html">jekyll博客搭建之艰辛之路(基本概念和处理报错)</a></li>
     </ul>
   </li>
-  <li>基础的cmd用法：<a href="https://lellansin.wordpress.com/2012/12/15/cmd%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80-%E6%89%AB%E7%9B%B2%E6%95%99%E7%A8%8B/">cmd应用基础 扫盲教程</a> 和 <a href="https://blog.csdn.net/aidenliu/article/details/5390113">CMD命令进入某个目录</a></li>
+  <li>其他参考
+    <ul>
+      <li>
+        <p><a href="https://help.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax#ignoring-markdown-formatting">GitHub Markdown语法</a></p>
+      </li>
+      <li>
+        <p><a href="https://lellansin.wordpress.com/2012/12/15/cmd%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80-%E6%89%AB%E7%9B%B2%E6%95%99%E7%A8%8B/">cmd应用基础扫盲教程</a> 和 <a href="https://blog.csdn.net/aidenliu/article/details/5390113">CMD命令进入某个目录</a></p>
+      </li>
+      <li>
+        <p><a href="https://www.jianshu.com/p/6323a4f0ada4">域名、DNS、IP地址的对应关系</a></p>
+      </li>
+    </ul>
+  </li>
 </ul>
 :ET
