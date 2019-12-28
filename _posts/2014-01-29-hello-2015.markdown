@@ -6,8 +6,10 @@ date:       2015-01-29 12:00:00
 author:     "Hux"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - 生活
+    - 模板
 ---
+
+> \*注：这是博客模板作者关于搭建博客的博文
 
 > “Yeah It's on. ”
 

@@ -6,8 +6,12 @@ date:       2019-12-27 15:51:00
 author:     "Mike Lyou"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - 生活
+    - Blog
+    - 教程
+
+# excerpt_separator: <!--more-->      # 使自动获取摘要在 `<!--more-->`处停止
 ---
+
 
 > 不要停笔，生活还在继续。
 
@@ -21,7 +25,7 @@ tags:
 
 历经千辛万苦，在一个平静的下午，终于把[我的个人博客](https://mikelyou.cpm)搭建成功了。
 
-这篇文章详细讲述了我搭建博客的过程，并列出了所有的参考资料，既可供自己将来查阅，也可供他人查看，解决遇到的相同问题。
+这篇文章详细讲述了我搭建博客的过程，并列出了所有的参考资料，算得上半个教程吧。既可供自己将来查阅，也可供他人查看，解决遇到的相同问题。
 
 这是博客里的第一篇文章，初次与这个世界见面，让我们大喊：
 ```Hello, world!```
@@ -82,7 +86,7 @@ tags:
 
 我建议在开始所有操作之前，打开一个记事本或笔记软件，把所有用到的网址、内容、参考文章统统记下来，害怕泄露隐私就写在纸上，以防忘记。无论是什么东西，忘记了都很麻烦。
 
-博客的搭建主要参考了 **[简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)** 以及 **[jekyll安装](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)** 两篇教程， 使用了 **[Hux的博客模板](https://github.com/Huxpro/huxblog-boilerplate)**。
+博客的搭建主要参考了 **[@陈素封cnfeat](https://github.com/cnfeat)** 的 **[简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)** 以及 **[@无心CasualMing](https://github.com/CasualMing)** 的 **[jekyll安装](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)** 两篇教程， 使用了 **[@黄玄Hux](https://github.com/Huxpro)** 的 **[博客模板](https://github.com/Huxpro/huxblog-boilerplate)**。
 
 接下来是搭建博客的详细步骤：
 
@@ -126,16 +130,13 @@ tags:
 在国内gem的源似乎被墙，可参考[这篇文章](https://dailc.github.io/2016/10/29/jekyllbuild.html)。
 
 ###### 9. 安装`jekyll`：
-也参考这篇文章：[jekyll搭建](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)。
+也参考这篇文章： [jekyll搭建](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/), 以及 [jekyll官方主页](http://jekyllcn.com/)。
 
 **至此，博客的搭建工作完成。**
 
 ## 更新博客方法
 
-博客搭建完成后，要做的是：
-
-- 修改模板中的各项设置
-- 开始写第一篇博文
+现在博客已经搭建成功，并且事实上，我们已经可以通过在网页编辑`username.github.io`仓库内的内容来更新博客了（可以尝试一下）。但是大家一般不推荐在网页端操作，而是采用下面的方法：**通过搭建本地服务器，在修改的同时随时预览网页，确认无误后一次性提交更新。**这样的好处在于，可以及时预览编辑产生的效果，且不会产生大量修改记录。第一次可能会觉得很复杂，但熟悉操作后就会比在网页操作方便很多。
 
 具体步骤如下：
 
@@ -159,45 +160,55 @@ Ctrl+C					#关服
 
 修改和添加内容个人觉得很简单，就是在文件之间抄一抄改一改。好的模板都会有详细的说明文件`README.md`，并会在相关代码出加有注释，不(ai)予(mo)赘(neng)述(zhu)。
 
-这里有[GitHub Markdown语法](https://help.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax#ignoring-markdown-formatting)的官方帮助页面。
+这里有 **[GitHub Markdown语法](https://help.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax#ignoring-markdown-formatting)** 的官方帮助页面。
+
+关于仓库中各个文件夹是干什么用的，可以参考 **[jekyll官方文档](http://jekyllcn.com/docs/structure/)**。
 
 ###### 4. 上传更新
 保存本地文件的修改，关闭服务器，在GitHub Desktop一次性上传所有更新，可以记录一下改了哪里。然后博客就更新啦。
 
 ## 后记
 
-本人小白一个，和打码基本没啥关系，网页什么的就更不懂了，不过欢迎提问，万一我们卡在同一个地方，我不就可以回答你了吗 [机智.jpg]。请各位路过的大佬不吝赐教，讲得能通俗一点就更好了，本人不胜感谢。
+本人是学材料专业的，这些玩意儿真的完全不懂，好在以前学过基础的编程，能看得懂简单的配置文件。
 
 虽然思想上有所准备，但搭建博客的过程还是比我想象的更曲折一点。有句话说，“专业的事，留给专业的人做”，而能够利用别人专业的成果，做自己要做的事，则是我等需要具备的能力。搭建博客的过程着实让我学到了很多，希望在今后更新博客的过程中，依然可以持续不断的学习。
 
-Mike Lyou
+欢迎交流和指点。目前评论功能还没搞定，本人联系邮箱：cl3934@columbia.edu。
 
-December 27, 2019
-
-Columbia University
+Mike Lyou，December 27, 2019， at Columbia University
 
 ## 博客功能完善
 
-今天主要搞定一下评论功能、数据统计
-
+- 今天主要搞定一下评论功能、数据统计
+- **[jekyll官方文档](http://jekyllcn.com/docs/structure/)** 中有很多好玩的选项，比如 [摘要](http://jekyllcn.com/docs/posts/#%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81)、 [草稿](http://jekyllcn.com/docs/drafts/)
 
 ## 致谢
 
-本人不才，能在短短一周内搭建出一个高端大气上档次的个人博客，靠的当然有个人的努力，但也绝对离不开各位陌生大佬们的帮助，在这里向大佬们表示感谢了。建立此博客以及撰写此文所用到的参考资料都在下面列出，本人学识和精力有限，如有错误，欢迎斧正。
+特别感谢 **[@黄玄Hux](https://github.com/Huxpro)** 精致详细的博客模板，以及 **[@陈素封cnfeat](https://github.com/cnfeat)** 与 **[@无心CasualMing](https://github.com/CasualMing)** 的教程。
+
+本人不才，能在短短一周内搭建出一个高端大气上档次的个人博客，靠的当然有个人的努力，但也绝对离不开各位陌生大佬们的帮助，在这里向大佬们表示感谢。建立此博客以及撰写此文所用到的参考资料都在下面列出。本人学识和精力有限，如有错误，欢迎斧正。
 
 ###### 参考模板和教程：
 
 - Hux的模板和使用说明：
-	- **模板（本博客使用模板）：[HuxBlog Boilerplate](https://github.com/Huxpro/huxblog-boilerplate)**
+	- 模板（本博客使用）：[HuxBlog Boilerplate](https://github.com/Huxpro/huxblog-boilerplate)
 	- 使用说明：[README.zh.md](https://github.com/Huxpro/huxblog-boilerplate/blob/master/README.zh.md)
 
 - cnfeat模板及教程：
 	- 模板：[cnfeat/blog.io: 简单直接可用博客模板](https://github.com/cnfeat/blog.io)
-	- **教程（主要参考教程）：[如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)**
+	- 教程（主要参考）：[如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)
 
 - ruby gem 与 jekyll 的安装和使用
-	- **jekyll安装（主要参考教程）：[jekyll安装及遇到的问题](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)**
+	- CasualMing 的 jekyll安装（主要参考）：[jekyll安装及遇到的问题](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)
 	- jekyll博客搭建：[jekyll博客搭建之艰辛之路(基本概念和处理报错)](https://dailc.github.io/2016/10/29/jekyllbuild.html)
+
+- 官方网站们：
+  - [GoDaddy](https://www.godaddy.com)
+  - [DNSpod](http://www.dnspod.cn)
+  - [HE](https://ipv6.he.net)
+  - [GitHub](https://github.com)
+  - [jekyll](http://jekyllcn.com/)
+
 
 - 其他参考
 	- [GitHub Markdown语法](https://help.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax#ignoring-markdown-formatting)

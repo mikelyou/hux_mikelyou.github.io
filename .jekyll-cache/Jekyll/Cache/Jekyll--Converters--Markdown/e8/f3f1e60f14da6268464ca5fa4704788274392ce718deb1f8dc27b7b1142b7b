@@ -1,4 +1,4 @@
-I"�F<blockquote>
+I"�H<blockquote>
   <p>不要停笔，生活还在继续。</p>
 </blockquote>
 
@@ -12,7 +12,7 @@
 
 <p>历经千辛万苦，在一个平静的下午，终于把<a href="https://mikelyou.cpm">我的个人博客</a>搭建成功了。</p>
 
-<p>这篇文章详细讲述了我搭建博客的过程，并列出了所有的参考资料，既可供自己将来查阅，也可供他人查看，解决遇到的相同问题。</p>
+<p>这篇文章详细讲述了我搭建博客的过程，并列出了所有的参考资料，算得上半个教程吧。既可供自己将来查阅，也可供他人查看，解决遇到的相同问题。</p>
 
 <p>这是博客里的第一篇文章，初次与这个世界见面，让我们大喊：
 <code class="highlighter-rouge">Hello, world!</code></p>
@@ -138,18 +138,13 @@
 <p>在国内gem的源似乎被墙，可参考<a href="https://dailc.github.io/2016/10/29/jekyllbuild.html">这篇文章</a>。</p>
 
 <h6 id="9-安装jekyll">9. 安装<code class="highlighter-rouge">jekyll</code>：</h6>
-<p>也参考这篇文章：<a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll搭建</a>。</p>
+<p>也参考这篇文章： <a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll搭建</a>, 以及 <a href="http://jekyllcn.com/">jekyll官方主页</a>。</p>
 
 <p><strong>至此，博客的搭建工作完成。</strong></p>
 
 <h2 id="更新博客方法">更新博客方法</h2>
 
-<p>博客搭建完成后，要做的是：</p>
-
-<ul>
-  <li>修改模板中的各项设置</li>
-  <li>开始写第一篇博文</li>
-</ul>
+<p>现在博客已经搭建成功，并且事实上，我们已经可以通过在网页编辑<code class="highlighter-rouge">username.github.io</code>仓库内的内容来更新博客了（可以尝试一下）。但是大家一般不推荐在网页端操作，而是采用下面的方法：<strong>通过搭建本地服务器，在修改的同时随时预览网页，确认无误后一次性提交更新。</strong>这样的好处在于，可以及时预览编辑产生的效果，且不会产生大量修改记录。第一次可能会觉得很复杂，但熟悉操作后就会比在网页操作方便很多。</p>
 
 <p>具体步骤如下：</p>
 

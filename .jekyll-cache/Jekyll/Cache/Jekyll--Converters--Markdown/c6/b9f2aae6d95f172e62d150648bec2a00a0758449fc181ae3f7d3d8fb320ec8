@@ -1,4 +1,4 @@
-I"�E<blockquote>
+I".M<blockquote>
   <p>不要停笔，生活还在继续。</p>
 </blockquote>
 
@@ -12,7 +12,7 @@
 
 <p>历经千辛万苦，在一个平静的下午，终于把<a href="https://mikelyou.cpm">我的个人博客</a>搭建成功了。</p>
 
-<p>这篇文章详细讲述了我搭建博客的过程，并列出了所有的参考资料，既可供自己将来查阅，也可供他人查看，解决遇到的相同问题。</p>
+<p>这篇文章详细讲述了我搭建博客的过程，并列出了所有的参考资料，算得上半个教程吧。既可供自己将来查阅，也可供他人查看，解决遇到的相同问题。</p>
 
 <p>这是博客里的第一篇文章，初次与这个世界见面，让我们大喊：
 <code class="highlighter-rouge">Hello, world!</code></p>
@@ -52,6 +52,8 @@
   </li>
 </ul>
 
+<p>目前常见的博客搭建有两种：一种是 GitHub+jekyll，另一种是GitHub+Hexo。本博客使用前一种 GitHub+jekyll 方法，也只讨论这种方法。</p>
+
 <p>（下面这段是我自己的想法，不一定正确）</p>
 
 <p>在 GitHub 上<code class="highlighter-rouge">fork</code>喜欢的<code class="highlighter-rouge">jekyll</code>模板后，博客内容实际上还未生成，此时访问<code class="highlighter-rouge">username.github.io</code>只会看到 GitHub Pages 的 <code class="highlighter-rouge">“Site Not Found”</code> 。我们需要将<code class="highlighter-rouge">repository</code>给<code class="highlighter-rouge">clown</code>到本地，并使用<code class="highlighter-rouge">jekyll</code>“运行” 或者说 “编译”，产生“<code class="highlighter-rouge">_site</code>”文件夹，这个文件夹里的内容才是真正显示在博客上的。而使用<code class="highlighter-rouge">jekyll</code>的一个好处在于，它可以生成本地服务器，在你将一切都编辑好之后，使用 GitHub Desktop 一次提交，避免产生很多不美观的修改记录。</p>
@@ -86,7 +88,7 @@
 
 <p>我建议在开始所有操作之前，打开一个记事本或笔记软件，把所有用到的网址、内容、参考文章统统记下来，害怕泄露隐私就写在纸上，以防忘记。无论是什么东西，忘记了都很麻烦。</p>
 
-<p>博客的搭建主要参考了 <a href="https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/">如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程</a> 以及 <a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll安装及遇到的问题</a>， 使用了<a href="https://github.com/Huxpro/huxblog-boilerplate">Hux的博客模板</a>。</p>
+<p>博客的搭建主要参考了 <strong><a href="https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/">简明 GitHub Pages与 jekyll 教程</a></strong> 以及 <strong><a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll安装</a></strong> 两篇教程， 使用了 <strong><a href="https://github.com/Huxpro/huxblog-boilerplate">Hux的博客模板</a></strong>。</p>
 
 <p>接下来是搭建博客的详细步骤：</p>
 
@@ -136,18 +138,13 @@
 <p>在国内gem的源似乎被墙，可参考<a href="https://dailc.github.io/2016/10/29/jekyllbuild.html">这篇文章</a>。</p>
 
 <h6 id="9-安装jekyll">9. 安装<code class="highlighter-rouge">jekyll</code>：</h6>
-<p>也参考这篇文章：<a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll搭建</a>。</p>
+<p>也参考这篇文章： <a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll搭建</a>, 以及 <a href="http://jekyllcn.com/">jekyll官方主页</a>。</p>
 
 <p><strong>至此，博客的搭建工作完成。</strong></p>
 
 <h2 id="更新博客方法">更新博客方法</h2>
 
-<p>博客搭建完成后，要做的是：</p>
-
-<ul>
-  <li>修改模板中的各项设置</li>
-  <li>开始写第一篇博文</li>
-</ul>
+<p>现在博客已经搭建成功，并且事实上，我们已经可以通过在网页编辑<code class="highlighter-rouge">username.github.io</code>仓库内的内容来更新博客了（可以尝试一下）。但是大家一般不推荐在网页端操作，而是采用下面的方法：<strong>通过搭建本地服务器，在修改的同时随时预览网页，确认无误后一次性提交更新。</strong>这样的好处在于，可以及时预览编辑产生的效果，且不会产生大量修改记录。第一次可能会觉得很复杂，但熟悉操作后就会比在网页操作方便很多。</p>
 
 <p>具体步骤如下：</p>
 
@@ -170,7 +167,9 @@ Ctrl+C					#关服
 
 <p>修改和添加内容个人觉得很简单，就是在文件之间抄一抄改一改。好的模板都会有详细的说明文件<code class="highlighter-rouge">README.md</code>，并会在相关代码出加有注释，不(ai)予(mo)赘(neng)述(zhu)。</p>
 
-<p>这里有<a href="https://help.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax#ignoring-markdown-formatting">GitHub Markdown语法</a>的官方帮助页面。</p>
+<p>这里有 <strong><a href="https://help.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax#ignoring-markdown-formatting">GitHub Markdown语法</a></strong> 的官方帮助页面。</p>
+
+<p>关于仓库中各个文件夹是干什么用的，可以参考 <strong><a href="http://jekyllcn.com/docs/structure/">jekyll官方文档</a></strong>。</p>
 
 <h6 id="4-上传更新">4. 上传更新</h6>
 <p>保存本地文件的修改，关闭服务器，在GitHub Desktop一次性上传所有更新，可以记录一下改了哪里。然后博客就更新啦。</p>
@@ -187,9 +186,18 @@ Ctrl+C					#关服
 
 <p>Columbia University</p>
 
+<h2 id="博客功能完善">博客功能完善</h2>
+
+<ul>
+  <li>今天主要搞定一下评论功能、数据统计</li>
+  <li><strong><a href="http://jekyllcn.com/docs/structure/">jekyll官方文档</a></strong> 中有很多好玩的选项，比如 <a href="http://jekyllcn.com/docs/posts/#%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81">摘要</a>、 <a href="http://jekyllcn.com/docs/drafts/">草稿</a></li>
+</ul>
+
 <h2 id="致谢">致谢</h2>
 
-<p>本人不才，能在短短一周内搭建出一个高端大气上档次的个人博客，靠的当然有个人的努力，但也绝对离不开各位陌生大佬们的帮助，在这里向大佬们表示感谢了。建立此博客以及撰写此文所用到的参考资料都在下面列出，本人学识和精力有限，如有错误，欢迎斧正。</p>
+<p>特别感谢 <strong><a href="https://github.com/Huxpro">@黄玄Hux</a></strong> 精致详细的博客模板，以及 <strong><a href="https://github.com/cnfeat">@cnfeat</a></strong> 与 <strong><a href="https://github.com/CasualMing">@无心CasualMing</a></strong> 的教程。</p>
+
+<p>本人不才，能在短短一周内搭建出一个高端大气上档次的个人博客，靠的当然有个人的努力，但也绝对离不开各位陌生大佬们的帮助，在这里向大佬们表示感谢了。建立此博客以及撰写此文所用到的参考资料都在下面列出。本人学识和精力有限，如有错误，欢迎斧正。</p>
 
 <h6 id="参考模板和教程">参考模板和教程：</h6>
 
@@ -210,6 +218,15 @@ Ctrl+C					#关服
     <ul>
       <li><strong>jekyll安装（主要参考教程）：<a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll安装及遇到的问题</a></strong></li>
       <li>jekyll博客搭建：<a href="https://dailc.github.io/2016/10/29/jekyllbuild.html">jekyll博客搭建之艰辛之路(基本概念和处理报错)</a></li>
+    </ul>
+  </li>
+  <li>官方网站们：
+    <ul>
+      <li><a href="https://www.godaddy.com">GoDaddy</a></li>
+      <li><a href="http://www.dnspod.cn">DNSpod</a></li>
+      <li><a href="https://ipv6.he.net">HE</a></li>
+      <li><a href="https://github.com">GitHub</a></li>
+      <li><a href="http://jekyllcn.com/">jekyll</a></li>
     </ul>
   </li>
   <li>其他参考
