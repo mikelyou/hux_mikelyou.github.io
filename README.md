@@ -16,15 +16,15 @@ If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Hux
 - 评论区
 - 谷歌数据
 - Back to top 按钮，可参考cnfeat博客
-- 右侧`Friends`为什么去不掉
 - **[jekyll官方文档](http://jekyllcn.com/docs/structure/)** 中有很多好玩的选项，比如
   - [摘要](http://jekyllcn.com/docs/posts/#%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81)
   - [草稿](http://jekyllcn.com/docs/drafts/)
-- 双重滚动条又出现了
-
+- ~~双重滚动条又出现了~~解决了
+- ~~右侧`Friends`为什么去不掉~~ 去掉了
 
 ## Past Works
 
+- 发现草稿的使用方法
 - About 页面稳定版本
 - 更换原模板中的作者图片
 - 发布第一篇文章
