@@ -14,15 +14,17 @@ If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Hux
 
 ## Next To Do
 
-- About 界面使用多语言及markdown语言，[参考](https://github.com/Huxpro/huxpro.github.io#v181)
+- About 界面使用多语言，[参考](https://github.com/Huxpro/huxpro.github.io#v181)
 - 评论区
 - 谷歌数据
 - Back to top 按钮
+- 浮动目录
 - **[jekyll官方文档](http://jekyllcn.com/docs/structure/)** 中有很多好玩的选项，比如
   - [摘要](http://jekyllcn.com/docs/posts/#%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81)
 
 ## Past Works
 
+- 博客正式公开
 - 解决双重滚动条的BUG
 - 发现草稿的使用方法
 - About 页面稳定版本
