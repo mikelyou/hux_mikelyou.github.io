@@ -1,8 +1,8 @@
-I"�Q<blockquote>
-  <p>Life is short, Write your blog.</p>
+I"�Q<blockquote>
+  <p>Life is short, write your blog.</p>
 </blockquote>
 
-<p>本文为综述性教程，详细介绍了本博客搭建的完整过程，并记录了本人在实际操作中遇到的问题。
+<p>本文详细介绍了本博客搭建的完整过程，并记录了本人在实际操作中遇到的问题。
 <!--more--></p>
 
 <h2 id="目录">目录</h2>
@@ -18,9 +18,7 @@
 
 <h2 id="前言">前言</h2>
 
-<p>刚刚开始研究生生活的我，学习知识的欲望又重新被点燃，很希望能通过写总结来促进和巩固对知识的学习。就在这个很好的时机，我发现了写博客这个方法。</p>
-
-<p>在看了 <a href="https://zhuanlan.zhihu.com/p/19743861">《为什么你要写博客？》</a></p>
+<p>刚刚开始研究生生活的我，学习知识的欲望又重新被点燃，很希望能通过写总结来促进和巩固对知识的学习。就在这个很好的时机，我发现了写博客这个方法。在看了 <strong><a href="https://zhuanlan.zhihu.com/p/19743861">《为什么你要写博客？》</a></strong> 之后，我更加坚定了搭建博客的想法。</p>
 
 <p>于是在期末结束后，我开始寻找教程，开始搭建自己的博客。博客的第一个版本，我使用的是 <strong><a href="https://github.com/cnfeat">@cnfeat</a></strong> 的 <strong><a href="https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/">《简明 GitHub Pages 与 jekyll 教程》</a></strong> 及配套模板。个人认为教程写的很好，按照教程我一步步搭好了博客。然而这一版博客还没开始用，我就想换模板了，原因是觉得美观上少点东西。</p>
 
@@ -82,7 +80,7 @@
   <li><code class="highlighter-rouge">jekyll 4.0.0</code></li>
 </ul>
 
-<h6 id="需要注册以下账户注意妥善保存账号密码">需要注册以下账户（注意妥善保存账号密码）：</h6>
+<h6 id="需要注册以下账户">需要注册以下账户：</h6>
 
 <ul>
   <li>GitHub账户</li>
@@ -91,8 +89,12 @@
   <li><del>Steam 账户，用于搞不定时放松心情</del></li>
 </ul>
 
+<p><strong>注意：</strong> 记得妥善保存账号和密码。</p>
+
 <h6 id="准备开始">准备开始</h6>
-<p>搭建博客会需要一点耐心和一点钻研精神。在这个过程中如果卡住了，百度一下别人有没有出现过类似的问题，检查一下自己有没有操作错误，善用 “重头再来法” 和 <del>“游戏放松法”</del> 。另外，建议在你平时学习的地方进行这个过程，会比坐在沙发上效率百倍。</p>
+<p><strong>搭建博客会需要一点耐心和一点钻研精神</strong>。在这个过程中如果卡住了，百度一下别人有没有出现过类似的问题，检查一下自己有没有操作错误，善用 “重头再来法” 和 “摸鱼放松法” 。</p>
+
+<p>另外，<strong>建议在你平时学习的地方进行这个过程</strong>，坐在图书馆会比坐在沙发上效率百倍。</p>
 
 <p>如果你已经做好了时间和心理的准备，就开始搭建你自己的第一个博客吧。冲鸭~</p>
 
@@ -149,7 +151,7 @@
 
 <p><strong>注意：</strong> 安装的软件和博客仓库最好放在 <strong>不含空格的英文路径</strong>。如果路径中有<code class="highlighter-rouge">Program Files</code>这样含空格的文件夹，在使用<code class="highlighter-rouge">cmd</code>命令时需要加括号<code class="highlighter-rouge">"Program Files"</code>，参考 <a href="https://blog.csdn.net/aidenliu/article/details/5390113">《CMD命令进入某个目录》</a>。</p>
 
-<p><strong>至此，博客的基础搭建工作完成。</strong> 不过现在博客还无法访问，因为其内容还未生成，已经进行到这一步的你还需要最后一点点工作——进行一次 <a href="#如何更新博客">更新博客</a> 操作。</p>
+<p><strong>至此，博客的基础搭建工作完成。</strong> 不过现在博客还无法访问，因为其内容还未生成，我们需要进行一次 <a href="#如何更新博客">#更新博客</a>操作 生成内容。已经进行到这里的你只差最后一步了，加油鸭 ~</p>
 
 <h2 id="如何更新博客">如何更新博客</h2>
 
@@ -161,9 +163,9 @@
 <p>使用 <strong><a href="https://desktop.github.com">GitHub Desktop</a></strong> 将仓库（也就是博客模板）clown至本地。参考 cnfeat的教程。</p>
 
 <h6 id="2-使用jekyll搭建本地服务器">2. 使用<code class="highlighter-rouge">jekyll</code>搭建本地服务器</h6>
-<p>这一步可参考 <a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">《jekyll搭建》</a> 中“安装jekyll”那一节。</p>
+<p>这一步可参考 <a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/#%E5%AE%89%E8%A3%85jekyll">《jekyll搭建》 #安装jekyll</a> 。</p>
 
-<p>我的仓库位置在<code class="highlighter-rouge">E:\GitHub\mikelyou.github.io</code>，需要以管理员模式打开<code class="highlighter-rouge">cmd</code>并输入一下几行命令：</p>
+<p>我的仓库位置在<code class="highlighter-rouge">E:\GitHub\mikelyou.github.io</code>，打开<code class="highlighter-rouge">cmd</code>并输入以下几行命令：</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>E:					#进入E盘
 cd E:\GitHub\mikelyou.github.io		#进入仓库所在目录
 jekyll serve				#开服，网址会写在下面，我的是`http://127.0.0.1:4000`
@@ -199,27 +201,29 @@ Ctrl+C					#关服
 
 <p>特别感谢 <strong><a href="https://github.com/Huxpro">@黄玄Hux</a></strong> 精致详细的博客模板，以及 <strong><a href="https://github.com/cnfeat">@陈素封cnfeat</a></strong> 与 <strong><a href="https://github.com/CasualMing">@无心CasualMing</a></strong> 的教程。</p>
 
-<p>本人不才，能在短短一周内搭建出一个高端大气上档次的个人博客，靠的当然有个人的努力，但也绝对离不开各位陌生大佬们的帮助，在这里向大佬们表示感谢。建立此博客以及撰写此文所用到的参考资料都在下面列出。本人学识和精力有限，如有错误，欢迎斧正。</p>
+<p>这个博客的成功搭建，离不开各位陌生大佬们的帮助，在这里向大佬们表示感谢。建立此博客以及撰写此文所用到的参考资料都在下面列出。本人学识和精力有限，如有错误，欢迎斧正。</p>
 
 <h6 id="参考模板和教程">参考模板和教程：</h6>
 
 <ul>
   <li>Hux的模板和使用说明：
     <ul>
-      <li>模板（本博客使用）：<a href="https://github.com/Huxpro/huxblog-boilerplate">HuxBlog Boilerplate</a></li>
-      <li>使用说明：<a href="https://github.com/Huxpro/huxblog-boilerplate/blob/master/README.zh.md">README.zh.md</a></li>
+      <li><strong><a href="https://github.com/Huxpro/huxblog-boilerplate">HuxBlog Boilerplate</a></strong> （使用说明：<a href="https://github.com/Huxpro/huxblog-boilerplate/blob/master/README.zh.md">README.zh.md</a> ）</li>
     </ul>
   </li>
-  <li>cnfeat模板及教程：
+  <li>
+    <p>cnfeat模板及教程：</p>
+
     <ul>
-      <li>模板：<a href="https://github.com/cnfeat/blog.io">cnfeat/blog.io: 简单直接可用博客模板</a></li>
-      <li>教程（主要参考）：<a href="https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/">如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程</a></li>
+      <li><a href="https://zhuanlan.zhihu.com/p/19743861">为什么你要写博客？</a></li>
+      <li><a href="https://github.com/cnfeat/blog.io">cnfeat/blog.io: 简单直接可用博客模板</a></li>
+      <li><strong><a href="https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/">如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程</a></strong></li>
     </ul>
   </li>
   <li>ruby gem 与 jekyll 的安装和使用
     <ul>
-      <li>CasualMing 的 jekyll安装（主要参考）：<a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll安装及遇到的问题</a></li>
-      <li>jekyll博客搭建：<a href="https://dailc.github.io/2016/10/29/jekyllbuild.html">jekyll博客搭建之艰辛之路(基本概念和处理报错)</a></li>
+      <li>CasualMing 的 <strong><a href="https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">jekyll安装及遇到的问题</a></strong></li>
+      <li><a href="https://dailc.github.io/2016/10/29/jekyllbuild.html">jekyll博客搭建之艰辛之路(基本概念和处理报错)</a></li>
     </ul>
   </li>
   <li>各官方网站：
