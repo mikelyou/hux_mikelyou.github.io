@@ -9,11 +9,11 @@ tags:
     - Blog
     - 教程
 
-# excerpt_separator: <!--more-->      # 使自动获取摘要在 `<!--more-->`处停止
+excerpt_separator: <!--more-->      # 使自动获取摘要在 `<!--more-->`处停止
 ---
 
 
-> Life is short, Write blogs。
+> Life is short, Write your blog.
 
 本文为综述性教程，详细介绍了本博客搭建的完整过程，并记录了本人在实际操作中遇到的问题。
 <!--more-->
@@ -30,20 +30,20 @@ tags:
 
 ## 前言
 
-刚刚开始研究生生活的我，学习知识的欲望又重新被点燃，很希望能通过写总结来促进和巩固对知识的学习。就在这个很好的时机，我发现了写博客这个方法。
+刚刚开始研究生生活的我，学习知识的欲望又重新被点燃，很希望能通过写总结来促进和巩固对知识的学习。就在这个很好的时机，我发现了写博客这个方法。在看了 **[《为什么你要写博客？》](https://zhuanlan.zhihu.com/p/19743861)** 之后，我更加坚定了搭建博客的想法。
 
-于是在 finals 结束后，我开始寻找教程，开始搭建自己的博客。博客的第一个版本，我使用的是 **[@cnfeat](https://github.com/cnfeat)** 的 **[简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)** 及配套模板。个人认为教程写的很好，按照教程我一步步搭好了博客。然而这一版博客还没开始用，我就想换模板了，原因是觉得美观上少点东西。
+于是在期末结束后，我开始寻找教程，开始搭建自己的博客。博客的第一个版本，我使用的是 **[@cnfeat](https://github.com/cnfeat)** 的 **[《简明 GitHub Pages 与 jekyll 教程》](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)** 及配套模板。个人认为教程写的很好，按照教程我一步步搭好了博客。然而这一版博客还没开始用，我就想换模板了，原因是觉得美观上少点东西。
 
-于是我找到了另一个模板： **[@Hux](https://github.com/Huxpro)[的博客模板](https://github.com/Huxpro/huxblog-boilerplate)**。谁知这一换模板，诸多问题接踵而至，导致原本三天可以搞定的事一星期才解决（当然中间摸鱼了好几天）。具体遇到的问题会在详细步骤中提到。
+于是我找到了另一个，也是博客使用的模板： **[@Hux](https://github.com/Huxpro)[的博客模板](https://github.com/Huxpro/huxblog-boilerplate)**。谁知这一换模板，诸多问题接踵而至，导致原本三天可以搞定的事一星期才解决（当然中间弃疗去摸了好几天的鱼）。具体遇到的问题会在详细步骤中提到。
 
-历经千辛万苦，在一个平静的下午，终于把 **我的个人博客：[mikelyou.com](https://mikelyou.com)** 搭建成功了。
+历经千辛万苦，在一个平静的下午，终于把 我的个人博客 —— **[mikelyou.com](https://mikelyou.com)** 搭建成功了。
 
 这是博客里的第一篇文章，初次与这个世界见面，让我们大喊：`Hello, world!`
 
 
 ## 相关概念与工具
 
-在讲搭建博客的具体步骤前，弄清楚一些概念会有所帮助。在搭建博客的过程中会用到多个工具，在这里简单列举一下。如果看不懂可以跳过，在实际搭建过程中出现疑惑再回来看。
+在讲搭建博客的具体步骤前，弄清楚一些概念会有所帮助。在搭建博客的过程中会用到多个工具，在这里简单列举一下。如果看不懂可以跳过这部分，直接前往 **[#搭建博客的完整过程 &rarr;](#搭建博客的完整过程)**，在实际搭建过程中出现疑惑再回来看。
 
 ###### 什么是域名、DNS 和 IP
 
@@ -53,7 +53,7 @@ tags:
 
 - **DNS** 是将域名和IP连接起来的东西。好比地图册，可以告诉我们“张三烧烤”的具体地址是“第五大道269号”。
 
-- 想了解更详细的内容可以参考 [域名、DNS、IP地址的对应关系](https://www.jianshu.com/p/6323a4f0ada4)。
+- 想了解更详细的内容可以参考 [《域名、DNS、IP地址的对应关系》](https://www.jianshu.com/p/6323a4f0ada4)。
 
 
 ###### 什么是ruby、gem 和 jekyll
@@ -72,22 +72,27 @@ tags:
 
 我们的博客托管在GitHub Pages，也就是`username.github.io`这个仓库（repository）中，而我们购买的域名如`whatever.com`只是一个网址，当我们在浏览器中输入`whatever.com`时，由于 DNS 将二者关联起来，网页会直接跳转至我们的博客，也是我们的仓库`username.github.io`，只不过浏览器中显示的还是`whatever.com`。
 
-###### 需要安装以下工具（后面数字为本人所使用的版本号）：
+###### 需要安装以下工具：
 
+- 我的系统 `win10 x64`
 - `ruby 2.6.5`
 - `gem 3.0.3`
-- `jekyll 4.0.0`      # 本人是在windows系统下安装的
+- `jekyll 4.0.0`
 
-###### 需要注册以下账户（注意妥善保存账号密码）：
+###### 需要注册以下账户：
 
 - GitHub账户
 - 在域名商的账户（如 GoDaddy），用于购买域名
 - DNS 服务商账户（如 HE），用于使用 DNS 服务
 - ~~Steam 账户，用于搞不定时放松心情~~
 
+**注意：** 记得妥善保存账号和密码。
+
 
 ###### 准备开始
-搭建博客会需要一点耐心和一点钻研精神。在这个过程中如果卡住了，百度一下别人有没有出现过类似的问题，检查一下自己有没有操作错误，善用 “重头再来法” 和 ~~“游戏放松法”~~ 。另外，建议在你平时学习的地方进行这个过程，会比坐在沙发上效率百倍。
+**搭建博客会需要一点耐心和一点钻研精神**。在这个过程中如果卡住了，百度一下别人有没有出现过类似的问题，检查一下自己有没有操作错误，善用 “重头再来法” 和 “摸鱼放松法” 。
+
+另外，**建议在你平时学习的地方进行这个过程**，坐在图书馆会比坐在沙发上效率百倍。
 
 如果你已经做好了时间和心理的准备，就开始搭建你自己的第一个博客吧。冲鸭~
 
@@ -95,7 +100,7 @@ tags:
 
 我建议在开始所有操作之前，打开一个记事本或笔记软件，把所有用到的网址、内容、参考文章统统记下来，害怕泄露隐私就写在纸上，以防忘记。无论是什么东西，忘记了都很麻烦。
 
-博客的搭建主要参考了 **[@陈素封cnfeat](https://github.com/cnfeat)** 的 **[简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)** 以及 **[@无心CasualMing](https://github.com/CasualMing)** 的 **[jekyll安装](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)** 两篇教程， 使用了 **[@黄玄Hux](https://github.com/Huxpro)** 的 **[博客模板](https://github.com/Huxpro/huxblog-boilerplate)**。
+博客的搭建主要参考了 **[@陈素封cnfeat](https://github.com/cnfeat)** 的 **[《简明 GitHub Pages与 jekyll 教程》](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)** 以及 **[@无心CasualMing](https://github.com/CasualMing)** 的 **[《jekyll安装》](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)** 两篇教程， 使用了 **[@黄玄Hux](https://github.com/Huxpro)** 的 **[博客模板](https://github.com/Huxpro/huxblog-boilerplate)**。
 
 接下来是搭建博客的详细步骤：
 
@@ -103,7 +108,7 @@ tags:
 去域名商购买域名。我是在域名商  ~~去他爹~~  **[GoDaddy](https://www.godaddy.com)**  购买的。购买过程很简单，关键在于想好你的域名叫什么；隐私保护通常不需要购买。参考 cnfeat的教程。
 
 ###### 2. 注册DNS服务：
-去 DNS 服务商注册 DNS 服务。广受好评的有国内服务商 **[DNSpod](http://www.dnspod.cn)** 和国外服务商 **[HE](https://ipv6.he.net)**。DNSpod 的使用参考 cnfeat的教程，HE 的使用参考这篇教程：**[HE的使用教程](https://www.ancii.com/aqz5yz5ad/)**。这一步先注册，具体设置看后面。
+去 DNS 服务商注册 DNS 服务。广受好评的有国内服务商 **[DNSpod](http://www.dnspod.cn)** 和国外服务商 **[HE](https://ipv6.he.net)**。DNSpod 的使用参考 cnfeat的教程，HE 的使用参考这篇教程：**[《HE的使用教程》](https://www.ancii.com/aqz5yz5ad/)**。这一步先注册，具体设置看后面。
 
 ###### 3. 安装`Node.js`和`Git`：
 请直接参考 cnfeat的教程。
@@ -112,7 +117,7 @@ tags:
 前往 **[GitHub官网](https://github.com)**。取个好名字，不要中二，将来仓库的名字必须是`你的用户名.github.io`。
 
 ###### 5. 配置`SSH Keys`：
-参考 cnfeat的教程。其教程中的代码都是在`cmd`中输入的，前面的`$ `不是我们需要输入的内容。不懂如何使用 cmd 的可以先看看 **[cmd应用基础扫盲教程](https://lellansin.wordpress.com/2012/12/15/cmd%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80-%E6%89%AB%E7%9B%B2%E6%95%99%E7%A8%8B/)**。
+参考 cnfeat的教程。其教程中的代码都是在`cmd`中输入的，前面的`$ `不是我们需要输入的内容。不懂如何使用 cmd 的可以先看看 **[《cmd应用基础扫盲教程》](https://lellansin.wordpress.com/2012/12/15/cmd%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80-%E6%89%AB%E7%9B%B2%E6%95%99%E7%A8%8B/)**。
 
 ###### 6. 将独立域名与 GitHub Pages 的空间绑定
 
@@ -125,37 +130,36 @@ tags:
 似乎必须上面三项都需要设置正确，才可以访问博客。从设置到生效可能 **会有延迟**，不要着急。**清理浏览器缓存** 有时会有奇效（我就在这卡了很久，清理缓存瞬间解决）。
 
 ###### 7. 使用 GitHub Pages 建立博客：
-大佬可以自己写，不佬就直接 fork 别人的模板啦，方法参考 cnfeat的教程（这里网址写的很容易看错，多看几遍）
+大佬可以自己写，不佬就直接 fork 别人的模板啦，方法参考 cnfeat的教程（这里网址写的很容易看错，多看几遍）。
 
-**！** 就在这时我突然决定换模板，随后遇到诸多问题，怀疑人生好几天，然后发现还少了后面两步。
+（**！** 就在这时我突然决定换模板，随后遇到诸多问题，怀疑人生好几天，然后发现还少了后面两步。）
 
 ###### 8. 安装`ruby`（包括`rubygem`）：
-这里主要参考 @CasualMing 的 **[jekyll搭建](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)**。
+这里主要参考 @CasualMing 的 **[《jekyll搭建》](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)** 以及 **[jekyll官方主页](http://jekyllcn.com/)**。
 
-与文中不同的是，我安装的是最新`ruby 2.6.5`，当时的疑惑是“为什么我没有devkit文件夹？？”
+这一部分可能会有点乱，因为每个工具都有不同的版本，彼此之间还有支持的需求。我的建议是：参考上面这篇教程的方法，去[官网](https://rubyinstaller.org/downloads/) 下载安装最新的`Ruby+Devkit`；然后直接尝试安装`jekyll`，如果哪个工具版本不支持会有提示，然后就相应的更新。善用 “反复重装法” 。
 
-实际上不用管它，它在不知道哪里已经装好了，直接尝试安装`jekyll`，如果哪个工具版本不支持会有提示，然后就相应的更新（重装大法好，我不知道重装了多少遍）。
+在国内gem的源似乎被墙，可参考这篇文章：[《jekyll博客搭建之艰辛之路》](https://dailc.github.io/2016/10/29/jekyllbuild.html)。
 
-在国内gem的源似乎被墙，可参考[这篇文章](https://dailc.github.io/2016/10/29/jekyllbuild.html)。
+**注意：** 安装的软件和博客仓库最好放在 **不含空格的英文路径**。如果路径中有`Program Files`这样含空格的文件夹，在使用`cmd`命令时需要加括号`"Program Files"`，参考 [《CMD命令进入某个目录》](https://blog.csdn.net/aidenliu/article/details/5390113)。
 
-###### 9. 安装`jekyll`：
-也参考这篇文章： [jekyll搭建](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/), 以及 [jekyll官方主页](http://jekyllcn.com/)。
 
-**至此，博客的搭建工作完成。**
+**至此，博客的基础搭建工作完成。** 不过现在博客还无法访问，因为其内容还未生成，我们需要进行一次 [#更新博客](#如何更新博客)操作 生成内容。已经进行到这里的你只差最后一步了，加油鸭 ~
+
 
 ## 如何更新博客
 
-现在博客已经搭建成功，并且事实上，我们已经可以通过在网页编辑`username.github.io`仓库内的内容来更新博客了（可以尝试一下）。但是大家一般不推荐在网页端操作，而是采用下面的方法：**通过搭建本地服务器，在修改的同时随时预览网页，确认无误后一次性提交更新。** 这样的好处在于，可以及时预览编辑产生的效果，且不会产生大量修改记录。第一次可能会觉得很复杂，但熟悉操作后就会比在网页操作方便很多。
+现在博客已经搭建成功，我们已经可以通过在网页编辑`username.github.io`仓库内的内容来更新博客了（可以尝试一下）。但是大家一般不推荐在网页端操作，而是采用下面的方法：**通过搭建本地服务器，在修改的同时随时预览网页，确认无误后一次性提交更新。** 这样的好处在于，可以及时预览编辑产生的效果，且不会产生大量修改记录。第一次可能会觉得很复杂，但熟悉操作后就会比在网页操作方便很多。
 
 具体步骤如下：
 
 ###### 1. 将仓库clown至本地
-使用 [GitHub Desktop](https://desktop.github.com) 将仓库（也就是博客模板）clown至本地。参考 cnfeat的教程。
+使用 **[GitHub Desktop](https://desktop.github.com)** 将仓库（也就是博客模板）clown至本地。参考 cnfeat的教程。
 
 ###### 2. 使用`jekyll`搭建本地服务器
-这一步可参考 [jekyll搭建](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/) 中“安装jekyll”那一节。
+这一步可参考 [《jekyll搭建》 #安装jekyll](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/#%E5%AE%89%E8%A3%85jekyll) 。
 
-我的仓库位置在`E:\GitHub\mikelyou.github.io`，需要以管理员模式打开`cmd`并输入一下几行命令：
+我的仓库位置在`E:\GitHub\mikelyou.github.io`，打开`cmd`并输入以下几行命令：
 ```
 E:					#进入E盘
 cd E:\GitHub\mikelyou.github.io		#进入仓库所在目录
@@ -197,16 +201,17 @@ Ctrl+C					#关服
 ###### 参考模板和教程：
 
 - Hux的模板和使用说明：
-	- 模板（本博客使用）：[HuxBlog Boilerplate](https://github.com/Huxpro/huxblog-boilerplate)
-	- 使用说明：[README.zh.md](https://github.com/Huxpro/huxblog-boilerplate/blob/master/README.zh.md)
+	- **[HuxBlog Boilerplate](https://github.com/Huxpro/huxblog-boilerplate)** （使用说明：[README.zh.md](https://github.com/Huxpro/huxblog-boilerplate/blob/master/README.zh.md) ）
 
 - cnfeat模板及教程：
-	- 模板：[cnfeat/blog.io: 简单直接可用博客模板](https://github.com/cnfeat/blog.io)
-	- 教程（主要参考）：[如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)
+
+  - [为什么你要写博客？](https://zhuanlan.zhihu.com/p/19743861)
+  - [cnfeat/blog.io: 简单直接可用博客模板](https://github.com/cnfeat/blog.io)
+  - **[如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)**
 
 - ruby gem 与 jekyll 的安装和使用
-	- CasualMing 的 jekyll安装（主要参考）：[jekyll安装及遇到的问题](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)
-	- jekyll博客搭建：[jekyll博客搭建之艰辛之路(基本概念和处理报错)](https://dailc.github.io/2016/10/29/jekyllbuild.html)
+	- CasualMing 的 **[jekyll安装及遇到的问题](https://wuxin.netlify.com/passages/begin/2017-5-24-jekyll%E5%AE%89%E8%A3%85%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/)**
+	- [jekyll博客搭建之艰辛之路(基本概念和处理报错)](https://dailc.github.io/2016/10/29/jekyllbuild.html)
 
 - 各官方网站：
   - [GoDaddy](https://www.godaddy.com)
