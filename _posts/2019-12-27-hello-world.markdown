@@ -8,6 +8,7 @@ header-img: "img/post-bg-2015.jpg"
 tags:
     - Blog
     - 教程
+    - 学习笔记
 
 excerpt_separator: <!--more-->      # 使自动获取摘要在 `<!--more-->`处停止
 ---
