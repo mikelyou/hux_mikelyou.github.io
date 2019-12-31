@@ -11,6 +11,7 @@ tags:
     - 学习笔记
 
 excerpt_separator: <!--more-->      # 使自动获取摘要在 `<!--more-->`处停止
+comments: true
 ---
 
 
