@@ -79,4 +79,4 @@ tags:
 
 修改 2019-12-30
 
-> 本文为 Mike Lyou原创，原文链接： 如需转载请保留原文链接。
+> 本文为 Mike Lyou原创，原文链接：https://mikelyou.com/2019/12/30/introduction-to-yinxiang， 如需转载请保留此链接。
